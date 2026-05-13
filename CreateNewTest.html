@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Test</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section>
+        <div>
+            <h1>Create New Test</h1>
+            <p>
+                Build a secure assessment for your candidates
+            </p>
+        </div>
+    </section>
+    <br>
+
+    <form>
+        <!-- Basic Information -->
+        <section>
+            <h2>Basic Information</h2>
+            <br>
+            <label for="testName">Test Name</label><br>
+            <input
+                type="text"
+                id="testName"
+                name="testName"
+                placeholder="Enter Test Name">
+            <br>
+
+            <label for="description">Description</label><br>
+            <input
+                type="text"
+                id="description"
+                name="description"
+                placeholder="Enter Description">
+            <br><br>
+
+            <label for="duration">Duration (in minutes)</label><br>
+            <input
+                type="number"
+                id="duration"
+                name="duration"
+                placeholder="Enter Duration">
+            <br><br>
+
+            <label for="numberOfQuestions">Number of Questions</label><br>
+            <input
+                type="number"
+                id="numberOfQuestions"
+                name="numberOfQuestions"
+                placeholder="Enter Number of Questions">
+            <br><br>
+
+            <label for="candidateInstructions">
+                Candidate Instructions
+            </label><br>
+            <textarea
+                id="candidateInstructions"
+                name="candidateInstructions"
+                rows="4"
+                cols="50"
+                placeholder="Enter Instructions for Candidates">
+            </textarea>
+        </section>
+        <br><br>
+
+        <section>
+            <h2>Questions</h2>
+            <!-- Buttons -->
+            <button type="button">Add MCQ</button>
+
+            <button type="button">
+                Add Short Answer Question
+            </button>
+
+            <button type="button">
+                More Question Types
+            </button>
+            <br><br>
+
+            <!-- MCQ -->
+            <h3>Multiple Choice Question</h3>
+
+            <label for="question1">Question 1</label><br>
+            <input
+                type="text"
+                id="question1"
+                name="question1"
+                placeholder="Enter Question">
+            <br><br>
+
+            <!-- Options -->
+            <label for="optionA">Option A</label><br>
+            <input
+                type="text"
+                id="optionA"
+                name="optionA"
+                placeholder="Enter Option A">
+            <br><br>
+
+            <label for="optionB">Option B</label><br>
+            <input
+                type="text"
+                id="optionB"
+                name="optionB"
+                placeholder="Enter Option B">
+            <br><br>
+
+            <label for="optionC">Option C</label><br>
+            <input
+                type="text"
+                id="optionC"
+                name="optionC"
+                placeholder="Enter Option C">
+            <br><br>
+
+            <label for="optionD">Option D</label><br>
+            <input
+                type="text"
+                id="optionD"
+                name="optionD"
+                placeholder="Enter Option D">
+        </section>
+        <br><br>
+
+        <!-- Security Settings -->
+        <section>
+            <h2>Security Settings</h2>
+            <br>
+
+            <!-- Camera Monitoring -->
+            <label>
+                <input type="checkbox">
+                Enable Camera Monitoring
+            </label>
+            <br><br>
+
+            <!-- Fullscreen Mode -->
+            <label>
+                <input type="checkbox">
+                Enable Fullscreen Mode
+            </label>
+            <br><br>
+
+            <!-- Tab Switching -->
+            <label>
+                <input type="checkbox">
+                Detect Tab Switching
+            </label>
+        </section>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Create Test</button>
+    </form>
+</body>
+</html>
